@@ -1,9 +1,6 @@
-require('lib.moonloader')
 require 'lib.sampfuncs'
 function onSystemMessage(msg, type, script)
-    if msg:find('AdminTools.lua:(.+): (.+)') and type == 3 then
-        sampShowDialog(252,'Что-то пошло не так','{FFFFFF}Произошла непредусмотренная ошибка в скрипте {00BFFF}Admin Tools{FFFFFF}.\nЕсли данная ошибка повторяется отправьте скриншот данного окна в ВК создателя {00BFFF}vk.com/maksytka_desighner{FFFFFF}\n\n'..msg,'Закрыть',_,0)
-    elseif msg:find('AdminTools.luaс:(.+): (.+)') and type == 3 then
-        sampShowDialog(252,'Что-то пошло не так','{FFFFFF}Произошла непредусмотренная ошибка в скрипте {00BFFF}Admin Tools{FFFFFF}.\nЕсли данная ошибка повторяется отправьте скриншот данного окна в ВК создателя {00BFFF}vk.com/maksytka_desighner{FFFFFF}\n\n'..msg,'Закрыть',_,0)
+    if msg:find('AdminTools%.luac?:%d+:.+') and type == 3 then
+        sampShowDialog(252,'Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє','{FFFFFF}РџСЂРѕРёР·РѕС€Р»Р° РЅРµРїСЂРµРґСѓСЃРјРѕС‚СЂРµРЅРЅР°СЏ РѕС€РёР±РєР° РІ СЃРєСЂРёРїС‚Рµ {00BFFF}Admin Tools{FFFFFF}.\nР•СЃР»Рё РґР°РЅРЅР°СЏ РѕС€РёР±РєР° РїРѕРІС‚РѕСЂСЏРµС‚СЃСЏ РѕС‚РїСЂР°РІСЊС‚Рµ СЃРєСЂРёРЅС€РѕС‚ РґР°РЅРЅРѕРіРѕ РѕРєРЅР° РІ Р’Рљ СЃРѕР·РґР°С‚РµР»СЏ {00BFFF}vk.com/maksytka_desighner{FFFFFF}\n\n'..msg,'Р—Р°РєСЂС‹С‚СЊ',_,0)
     end
 end
